@@ -6,7 +6,6 @@
     <meta charset="uft-8">  
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-
   </head>
 
   <body>
@@ -14,26 +13,36 @@
     <h1 id="header">Simple Calculator</h1>
     <p id="description">(can only handle single expressions)</p>
 
+    <div class="output-box">
+      <div class="output-text">
+        <p id="output"></p>
+      </div>
+    </div>
+
     <div class="button-container">
-      <button id="n1" onclick="enterNum(1)">1</button>
-      <button id="n2" onclick="enterNum(2)">2</button>
-      <button id="n3" onclick="enterNum(3)">3</button>
-      <button id="n4" onclick="enterNum(4)">4</button>
-      <button id="n5" onclick="enterNum(5)">5</button>
+      <div class="numbers">
+        <button id="n1" onclick="enter('1')">1</button>
+        <button id="n2" onclick="enter('2')">2</button>
+        <button id="n3" onclick="enter('3')">3</button>
+        <button id="n4" onclick="enter('4')">4</button>
+        <button id="n5" onclick="enter('5')">5</button>
+        <button id="n6" onclick="enter('6')">6</button>
+        <button id="n7" onclick="enter('7')">7</button>
+        <button id="n8" onclick="enter('8')">8</button>
+        <button id="n9" onclick="enter('9')">9</button>
+        <button id="n0" onclick="enter('0')">0</button>
+        <button id="o." onclick="enter('.')">.</button>
+      </div>
+      <div class="operations">
+        <button id="o-" onclick="enter('-')">-</button>
+        <button id="o+" onclick="enter('+')">+</button>
+        <button id="o*" onclick="enter('*')">*</button>
+        <button id="o/" onclick="enter('/')">/</button>
+      </div>
+      <div class="misc">
+        <button id="mC" onclick="clear()">C</button>
+        <button id="m=" onclick="compute()">=</button>
+      </div>
     </div>
   </body>
-
 </html>
-
-    <!-- <div class="button-container">
-      <a href="#/Action1" class="button">Action1</a>
-      <a href="#/Action2" class="button">Action2</a>
-      <a href="#/Action3" class="button">Action3</a>
-      <a href="#/Action4" class="button">Action4</a>
-      <a href="#/Action5" class="button">Action5</a>
-      <a href="#/Action1" class="button">Action1</a>
-      <a href="#/Action2" class="button">Action2</a>
-      <a href="#/Action3" class="button">Action3</a>
-      <a href="#/Action4" class="button">Action4</a>
-      <a href="#/Action5" class="button">Action5</a>
-    </div> -->
